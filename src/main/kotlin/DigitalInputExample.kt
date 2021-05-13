@@ -9,7 +9,6 @@ fun main() = application {
     }
 
     program {
-
         var state = false
         with (DigitalInput()) {
             hubPort = 0
@@ -29,7 +28,6 @@ fun main() = application {
             } else {
                 drawer.clear(ColorRGBa.RED)
             }
-
         }
     }
 }
