@@ -1,5 +1,4 @@
 import com.phidget22.DigitalInput
-import com.phidget22.VoltageRatioInput
 import org.openrndr.application
 import org.openrndr.color.ColorRGBa
 
