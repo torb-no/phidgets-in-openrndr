@@ -125,6 +125,7 @@ val kotlinVersion = "1.4.32"
 
 plugins {
     java
+    `java-library`
     kotlin("jvm") version("1.4.32")
     id("com.github.johnrengelman.shadow") version ("6.1.0")
     id("org.beryx.runtime") version ("1.11.4")
@@ -160,6 +161,7 @@ fun DependencyHandler.orxNatives(module: String): Any {
 
 dependencies {
     /*  This is where you add additional (third-party) dependencies */
+    implementation(files("$projectDir/src/lib/phidget22.jar"))
 
 //    implementation("org.jsoup:jsoup:1.12.2")
 //    implementation("com.google.code.gson:gson:2.8.6")
